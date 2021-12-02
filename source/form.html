@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
-<body>
+<body class="page__body">
   <header class="page-header">
     <a class="page-header__logo page-header__logo--current">
       <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт энерджи">
@@ -44,11 +44,11 @@
           <ul class="selection-name__list">
             <li class="selection-name__item">
               <label class="selection-name__label" for="name">Имя:*</label>
-                <input type="text" placeholder="барсик" name="name" id="name">
+                <input type="text" value="барсик" name="name" id="name" required>
               <label class="selection-name__label" for="weight">Вес (кг):* </label>
-                <input type="text" placeholder="7" name="weight" id="weight">
+                <input type="text" value="7" name="weight" id="weight" required>
               <label class="selection-name__label" for="age">Возраст (лет):</label>
-                <input type="text" placeholder="7" name="age" id="age">
+                <input type="text" value="7" name="age" id="age">
             </li>
           </ul>
         </fieldset>
@@ -80,9 +80,9 @@
         <fieldset class="selection-personal">
           <legend class="selection-title">Контактные данные (владельца кота)</legend>
             <label class="selection-personal__control" for="email">E-mail:*</label>
-              <input class="selection-personal__input" type="email" placeholder="kuklachev@gmail.com" name="email" id="email">
-            <label class="selection-personal__control" for="email">Телефон:*</label>
-              <input class="selection-personal__input" type="tel" placeholder="8 (960) 900-60-90" name="email" id="email">
+              <input class="selection-personal__input" type="email" value="kuklachev@gmail.com" name="email" id="email" required>
+            <label class="selection-personal__control" for="tel">Телефон:*</label>
+              <input class="selection-personal__input" type="tel" value="8 (960) 900-60-90" name="email" id="tel" required>
         </fieldset>
         <fieldset class="selection-comment">
           <legend class="selection-title">Комментарий</legend>
@@ -115,7 +115,7 @@
               </li>
               <li class="selection-additionally__item">
                 <label class="selection-additionally__control">
-                  <input class="selection-additionally__input" type="checkbox" name="sugar">
+                  <input class="selection-additionally__input" type="checkbox" name="vitamins">
                   <span class="selection-additionally__control-mark"></span>
                   <span class="selection-additionally__control-label">Витамины</span>
                 </label>
@@ -131,14 +131,8 @@
     <section class="cooperation">
       <div class="cooperation__wpapper">
         <h2 class="visually-hidden">Адрес для сотрудничества.</h2>
-        <ul class="cooperation__list">
-          <li class="cooperation__item">
             <p class="cooperation__title">Приглашаем к сотрудничеству дилеров!</p>
-          </li>
-          <li class="cooperation__item">
             <p class="cooperation__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          </li>
-        </ul>
         <h2 class="visually-hidden">Карта навигации.</h2>
         <img src="#" alt="Иконка логотипа на карте." class="cooperation__icon">
       </div>
@@ -151,7 +145,7 @@
           <img src="img/logo-mobile-2.svg" width="128" height="24" alt="Футер логотип Кэт энерджи">
         </a>
       </div>
-        <ul class="social__list">
+        <ul class="social social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
@@ -162,7 +156,7 @@
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           </li>
         </ul>
-      <div class="page-footer__copyright">
+      <div class="copyright page-footer__copyright">
         <a class="copyright__link copyright__link--icon" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>

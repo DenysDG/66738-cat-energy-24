@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -14,17 +17,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a>
+            <a class="main-nav__link">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">
+            <a class="main-nav__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -44,11 +47,11 @@
           <ul class="selection-name__list">
             <li class="selection-name__item">
               <label class="selection-name__label" for="name">Имя:*</label>
-                <input type="text" value="барсик" name="name" id="name" required>
+                <input class="selection-name__input" type="text" value="барсик" name="name" id="name" required>
               <label class="selection-name__label" for="weight">Вес (кг):* </label>
-                <input type="text" value="7" name="weight" id="weight" required>
+                <input class="selection-name__input" type="text" value="7" name="weight" id="weight" required>
               <label class="selection-name__label" for="age">Возраст (лет):</label>
-                <input type="text" value="7" name="age" id="age">
+                <input class="selection-name__input" type="text" value="7" name="age" id="age">
             </li>
           </ul>
         </fieldset>
@@ -123,7 +126,7 @@
           </ul>
         </fieldset>
         <div class="selection-buttons">
-          <button class="selection-buttons__button" type="submit">Отправить заявку</button>
+          <button class="selection-buttons__button button" type="submit">Отправить заявку</button>
           <p class="selection-buttons__text">* — Обязательные поля</p>
         </div>
       </form>

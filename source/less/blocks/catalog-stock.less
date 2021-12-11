@@ -1,0 +1,30 @@
+
+.catalog-stock {
+  min-height: 290px;
+  position: relative;
+  background-image: url("../../img/catalog/cat-stock.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: 0;
+}
+
+.catalog-stock::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 290px;
+  background-repeat: no-repeat;
+  background-color: #62a53b;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.catalog-stock__text {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}

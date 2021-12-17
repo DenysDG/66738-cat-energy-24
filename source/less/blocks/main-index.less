@@ -1,0 +1,55 @@
+.main-index {
+  position: relative;
+  background-image: url("../../img/index-background.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: 0;
+}
+
+.main-index__wrapper {
+  padding: 27px 20px 3px 20px;
+}
+
+.main-index::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 302px;
+  background-repeat: no-repeat;
+  background-color: #62a53b;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.main-index__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.main-index__subtitile {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.main-index__button {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  width: 280px;
+  color: #ffffff;
+  background-color: #68b738;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 0;
+}

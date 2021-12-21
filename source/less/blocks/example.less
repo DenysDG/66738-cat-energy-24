@@ -1,8 +1,22 @@
 
+
+.example {
+  @media (min-width: @tablet-width) {
+
+    background-color: #eaeaea;
+  }
+}
+
 .example__wrapper {
   background-color: #eaeaea;
   color: #000000;
   padding: 25px 20px 48px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .example__title {
@@ -13,6 +27,11 @@
   color: #000000;
   margin-top: 0;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
@@ -21,10 +40,21 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .example__result {
@@ -54,6 +84,11 @@
 .example__image {
   width: 280px;
   height: 232px;
+
+  @media (min-width: @tablet-width) {
+    width: 572px;
+    height: 511px;
+  }
 }
 
 .example__button {
@@ -62,4 +97,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.example__range {
+  @media (min-width: @tablet-width) {
+    width: 426px;
+  }
 }

@@ -12,3 +12,23 @@ body {
   background-color: #ffffff;
 }
 
+.page__body {
+  min-width: 320px;
+}
+
+.page__body-container {
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .page__body-container {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page__body-container {
+    width: 1440px;
+  }
+}

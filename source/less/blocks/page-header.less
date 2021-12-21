@@ -2,7 +2,27 @@
   padding: 0 20px;
 }
 
-.page-header__image {
-  width: 34px;
-  height: 38px;
+.page-header__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 42px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    padding-top: 62px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
+
+.page-header__image {
+  @media (min-width: @desktop-width) {
+    margin-right: 600px;
+  }
+}
+

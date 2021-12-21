@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <div class="page__body-container">
+    <header class="page-header page-header__wrapper">
       <a class="page-header__logo page-header__logo--current">
         <img class="page-header__image" src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт энерджи.">
       </a>
@@ -61,16 +62,16 @@
       <section class="advantages">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--leaf">
+          <li class="advantages__item advantages__item--leaf advantages__item--number-1">
             <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
-          <li class="advantages__item advantages__item--water">
+          <li class="advantages__item advantages__item--water advantages__item--number-2">
             <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="advantages__item advantages__item--food">
+          <li class="advantages__item advantages__item--food advantages__item--number-3">
             <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
-          <li class="advantages__item advantages__item--watch">
+          <li class="advantages__item advantages__item--watch advantages__item--number-4">
             <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
@@ -91,8 +92,8 @@
           </ul>
           <p class="example__cost">Затраты на питание: 15 000 руб.</p>
           <div class="example__cats">
-            <img class="example_image" src="img/cat-fat.png" width="280" height="232" alt="Фото жирного кота.">
-            <img src="img/cat-thin.png" width="280" height="232" alt="Фото худого кота.">
+            <img class="example__image" src="img/cat-fat.png" width="280" height="232" alt="Фото жирного кота.">
+            <img class="example__image" src="img/cat-thin.png" width="280" height="232" alt="Фото худого кота.">
           </div>
           <div class="example__slider">
             <button class="example__button" type="button">Было</button>
@@ -134,5 +135,6 @@
         </div>
       </div>
     </footer>
+  </div>
   </body>
 </html>

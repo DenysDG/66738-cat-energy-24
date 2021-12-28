@@ -1,12 +1,32 @@
 
 .cooperation__wrapper {
   padding: 26px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-around;
+    width: 565px;
+    height: 198px;
+    background-color: #ffffff;
+  }
 }
 
 .cooperation__title {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .cooperation__adress {
@@ -15,4 +35,9 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

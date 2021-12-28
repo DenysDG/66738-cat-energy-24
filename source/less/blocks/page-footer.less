@@ -1,6 +1,21 @@
 
 .page-footer__wrapper {
   padding: 39px 20px 20px 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .page-footer__image {

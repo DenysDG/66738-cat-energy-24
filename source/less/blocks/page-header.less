@@ -3,7 +3,11 @@
 }
 
 .page-header__wrapper {
+  min-width: 320px;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
+    width: 738px;
     display: flex;
     padding-top: 42px;
     align-items: center;
@@ -11,6 +15,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 1220px;
     display: flex;
     padding-top: 62px;
     align-items: center;

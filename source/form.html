@@ -9,6 +9,7 @@
 </head>
 <body class="page__body">
   <header class="page-header">
+    <div class="page-header__wrapper">
     <a class="page-header__logo page-header__logo--current">
       <img src="img/logo-mobile.svg" width="34" height="38" alt="Логотип Кэт энерджи">
     </a>
@@ -17,32 +18,34 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="index.html">
+            <a class="main-nav__link main-nav__link--inner" href="index.html">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="main-nav__link main-nav__link--inner" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__link main-nav__link--inner" href="form.html">
               Подбор программы
             </a>
           </li>
         </ul>
       </div>
     </nav>
+  </div>
   </header>
   <main class="main-form">
     <section class="main-form__container">
       <header class="inner-header">
         <h1 class="inner-header__title">Подбор программы</h1>
-        <p class="inner-header__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="inner-header__subtitle">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       </header>
       <form class="selection" action="https://echo.htmlacademy.ru/" method="post">
         <h2 class="visually-hidden">Список программы с фильтрами.</h2>
+        <div class="selection-name__wrapper">
         <fieldset class="selection-name">
           <ul class="selection-name__list">
             <li class="selection-name__item">
@@ -80,6 +83,7 @@
             </li>
           </ul>
         </fieldset>
+      </div>
         <fieldset class="selection-personal">
           <legend class="selection-title">Контактные данные (владельца кота)</legend>
             <label class="selection-personal__control" for="email">E-mail:*</label>
@@ -97,7 +101,7 @@
             <ul class="selection-additionally__list">
               <li class="selection-additionally__item">
                 <label class="selection-additionally__control">
-                  <input class="selection-additionally__input" type="checkbox" name="sugar">
+                  <input class="selection-additionally__input" type="checkbox" name="sugar" checked>
                   <span class="selection-additionally__control-mark"></span>
                   <span class="selection-additionally__control-label">Сахарозаменитель</span>
                 </label>

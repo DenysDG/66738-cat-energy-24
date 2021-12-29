@@ -1,4 +1,18 @@
 
+.selection-comment {
+  min-width: 320px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 650px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
 
 .selection-comment__text {
   font-family: "Oswald", sans-serif;
@@ -8,4 +22,18 @@
   text-transform: uppercase;
   color: #444444;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    min-height: 170px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    min-height: 170px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

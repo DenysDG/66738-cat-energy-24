@@ -1,10 +1,39 @@
 
+.inner-header {
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 40px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 650px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
 .inner-header__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
 }
 
 .inner-header__subtitle {
@@ -14,4 +43,16 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }

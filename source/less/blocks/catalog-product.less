@@ -34,12 +34,13 @@
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 60px;
+    justify-content: center;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 245px 245px 245px 245px;
-    gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 

@@ -1,4 +1,50 @@
 
+.selection-buttons {
+  min-width: 320px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 650px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 1220px;
+    padding: 0 110px;
+  }
+}
+
+.selection-buttons__button {
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  width: 280px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 0;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 368px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-right: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 468px;
+    margin-right: 81px;
+  }
+}
+
 .selection-buttons__text {
   font-family: "Arial", sans-serif;
   font-weight: 400;

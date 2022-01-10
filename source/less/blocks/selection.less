@@ -11,4 +11,32 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  margin-bottom: 76px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.selection-name__wrapper {
+  min-width: 320px;
+  margin: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 650px;
+    padding: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 1220px;
+    padding: 0 110px;
+    margin-bottom: 65px;
+  }
 }

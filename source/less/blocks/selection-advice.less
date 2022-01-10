@@ -1,6 +1,33 @@
 
+.selection-advice {
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 650px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin-bottom: 0;
+  }
+}
+
 .selection-advice__list {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    display: flex;
+  }
 }
 
 .selection-advice__control-label {
@@ -10,4 +37,14 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

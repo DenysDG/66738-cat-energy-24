@@ -1,8 +1,8 @@
 
 .advantages {
-
   min-width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
@@ -60,7 +60,7 @@
 .advantages__item--number-2 {
   @media (min-width: @tablet-width) {
     background-image: url("@{folder-img}advantages-2.png");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-position: right;
   }
 }
@@ -98,10 +98,53 @@
   font-family: "Arial", sans-serif;
   font-weight: 400;
   margin: 0;
+  min-height: 60px;
+  padding-left: 80px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 150px;
+    padding-top: 120px;
+    padding-left: 0;
+  }
+}
+
+.advantages__description-leaf {
+  background-image: url("../../img/advantages-icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  @media (min-width: @tablet-width) {
+    background-size: 80px 80px;
+  }
+}
+
+.advantages__description-water {
+  background-image: url("../../img/advantages-icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  @media (min-width: @tablet-width) {
+    background-size: 80px 80px;
+  }
+}
+
+.advantages__description-food {
+  background-image: url("../../img/advantages-icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  @media (min-width: @tablet-width) {
+    background-size: 80px 80px;
+  }
+}
+
+.advantages__description-watch {
+  background-image: url("../../img/advantages-icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+
+  @media (min-width: @tablet-width) {
+    background-size: 80px 80px;
   }
 }

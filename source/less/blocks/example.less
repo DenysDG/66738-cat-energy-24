@@ -1,9 +1,15 @@
 
 
 .example {
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
 
     background-color: #eaeaea;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
   }
 }
 
@@ -16,6 +22,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #e5e5e5 50%, #eaeaea 100%);
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    padding: 0 110px;
   }
 }
 

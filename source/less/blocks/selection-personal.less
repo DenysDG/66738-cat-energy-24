@@ -1,7 +1,10 @@
 
 .selection-personal {
   min-width: 320px;
-  margin: 0 auto;
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  border: none;
 
   @media (min-width: @tablet-width) {
     width: 700px;
@@ -9,7 +12,9 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 1220px;
+    flex-wrap: wrap;
+    width: 1440px;
+    margin-bottom: 67px;
   }
 }
 
@@ -20,6 +25,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  margin-right: 11px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -33,6 +39,15 @@
   }
 }
 
+.selection-personal__control-wrapper:not(:last-child) {
+  margin-bottom: 14px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+
 .selection-personal__input {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -40,6 +55,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid #cdcdcd;
+  padding: 15px 20px;
 
   @media (min-width: @tablet-width) {
     width: 551px;
@@ -51,5 +68,45 @@
     width: 486px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.selection-personal__input-email {
+  min-width: 230px;
+  background-image: url("../../img/icon_email.svg");
+  background-repeat: no-repeat;
+  background-position-x: 190px;
+  background-position-y: 18px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 572px;
+    background-position-x: 528px;
+    background-position-y: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 472px;
+    background-position-x: 435px;
+    background-position-y: 22px;
+  }
+}
+
+.selection-personal__input-tel {
+  min-width: 213px;
+  background-image: url("../../img/icon_phone.svg");
+  background-repeat: no-repeat;
+  background-position-x: 175px;
+  background-position-y: 15px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 552px;
+    background-position-x: 510px;
+    background-position-y: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 472px;
+    background-position-x: 440px;
+    background-position-y: 20px;
   }
 }

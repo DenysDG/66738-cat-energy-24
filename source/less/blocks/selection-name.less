@@ -1,16 +1,19 @@
 
 .selection-name {
   min-width: 320px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
 
   @media (min-width: @tablet-width) {
-    width: 650px;
-    margin-bottom: 72px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 80px;
     margin-bottom: 0;
-    width: 1220px;
+    width: 570px;
   }
 }
 
@@ -18,15 +21,6 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-
-  @media (min-width: @tablet-width) {
-    width: 620px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 570px;
-    display: flex;
-  }
 }
 
 .selection-name__label {
@@ -34,6 +28,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  margin-right: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -44,6 +39,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.selection-name__label-wrapper:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 .selection-name__input {
@@ -53,6 +52,8 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid #e7e7e7;
+  padding: 15px 18px;
 
   @media (min-width: @tablet-width) {
     width: 406px;
@@ -63,5 +64,41 @@
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.selection-name__input-name {
+  min-width: 235px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 585px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 505px;
+  }
+}
+
+.selection-name__input-weight {
+  min-width: 214px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 555px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 475px;
+  }
+}
+
+.selection-name__input-age {
+  min-width: 170px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 515px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 436px;
   }
 }

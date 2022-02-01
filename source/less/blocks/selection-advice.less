@@ -1,15 +1,27 @@
 
 .selection-advice {
   min-width: 320px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
 
   @media (min-width: @tablet-width) {
-    width: 650px;
-    margin-bottom: 75px;
+    border: 1px solid #e7e7e7;
+    padding: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 570px;
     margin-bottom: 0;
+  }
+}
+
+.selection-advice__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
   }
 }
 
@@ -17,17 +29,6 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-
-  @media (min-width: @tablet-width) {
-    width: 620px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 570px;
-    display: flex;
-  }
 }
 
 .selection-advice__control-label {
@@ -47,4 +48,59 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.selection-advice__control {
+  position: relative;
+  display: block;
+  padding-left: 46px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 56px;
+  }
+}
+
+.selection-advice__control-mark {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.selection-advice__input[type="radio"] + .selection-advice__control-mark {
+  border-radius: 50%;
+}
+
+.selection-advice__input[type="radio"]:checked + .selection-advice__control-mark::before {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
+
+  @media (min-width: @tablet-width) {
+    top: 10px;
+    left: 10px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.selection-advice__control:hover .selection-advice__control-mark {
+  border-color: #bababa;
+}
+
+.selection-advice__input:disabled + .selection-advice__control-mark {
+  border-color: #bababa;
+  opacity: 0.3;
 }

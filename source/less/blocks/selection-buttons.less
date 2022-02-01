@@ -5,19 +5,17 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    width: 650px;
-    padding: 0 60px;
+    width: 768px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 1220px;
-    padding: 0 110px;
+    width: 1440px;
   }
 }
 
 .selection-buttons__button {
-
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   display: block;
@@ -30,17 +28,20 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 8px 0;
+  margin-bottom: 21px;
   border: none;
 
   @media (min-width: @tablet-width) {
-    width: 368px;
+    display: block;
+    width: 282px;
     font-size: 20px;
     line-height: 20px;
-    margin-right: 61px;
+    margin-right: 45px;
+    padding: 17px 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 468px;
+    width: 568px;
     margin-right: 81px;
   }
 }
@@ -51,4 +52,10 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  padding-left: 60px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
